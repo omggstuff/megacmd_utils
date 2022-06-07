@@ -46,6 +46,9 @@ def mega_mv(*args, dest):
 def mega_cd(path='/'):
 	return run_mega_cmd('cd', f'"{path}"')
 
+def mega_cp(*args, dest):
+	return run_mega_cmd('cp', *args, f'"{dest}"')
+
 def mega_thumbnail(remote_path, local_path = None):
 	'''Download the thumbnail for the remote file'''
 	arg = f'"{remote_path}"'
