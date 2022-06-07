@@ -30,6 +30,6 @@ if __name__ == "__main__":
 	m.mega_cd()
 	print(f'Moving files to {dest}')
 	for i, move in enumerate(moves):
-		if i % 10 == 0:	print(f'Moving file #{i*10} of {len(moves)*10}')
+		if i % 10 == 0:	print(f'Moving file #{i*args.chunk_size} of {len(moves)*args.chunk_size}')
 		m.mega_mv(move, dest=dest)
 	print('Done.')
