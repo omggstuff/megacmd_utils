@@ -34,3 +34,8 @@ Copies or moves all files in the given filelist to the specified destination.
 `python mv_filelist.py <filelist> <mega_dest>`  
 Note: filelist is expected to have full file paths, as is returned with the `build_filelist` script
 
+## find_and_cp and find_and_mv
+Given a list of filenames, find every copy of each file on your mega, and copy/move to the specified destination.
+`python find_and_cp.py <filelist> <mega_dest>`  
+`python find_and_mv.py <filelist> <mega_dest>`  
+Note: here, the filelist is expected to only have filenames, not full paths
