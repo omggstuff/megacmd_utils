@@ -27,3 +27,10 @@ Will also create a `thumbcheck_temp.jpg` file as an artifact of the thumbnail do
 Note: the thumbnail download process takes a few seconds per file, and thus can add up to a sizeable amount of time with larger filelists.  
 
 Has built-in resume function: script will keep track of which file it last checked, by saving to `<filelist>.progress.txt`. Should the process get interrupted somehow, running the script with the same input filelist will resume where it left off, instead of starting over.
+
+## cp_filelist and mv_filelist
+Copies or moves all files in the given filelist to the specified destination.  
+`python cp_filelist.py <filelist> <mega_dest>`  
+`python mv_filelist.py <filelist> <mega_dest>`  
+Note: filelist is expected to have full file paths, as is returned with the `build_filelist` script
+
